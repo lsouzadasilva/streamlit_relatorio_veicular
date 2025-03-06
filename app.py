@@ -54,8 +54,8 @@ with paginas:
 
 
 def filtro_tela(df):
-    month = st.multiselect('Mês', df['ANO-MES'].unique())
-    region = st.multiselect('Região', df['REGIÃO'].unique())
+    month = st.multiselect('*Selecione um período', df['ANO-MES'].unique())
+    region = st.multiselect('*Selecione uma Região', df['REGIÃO'].unique())
     df_filtro = df[(df['ANO-MES'].isin(month) & df['REGIÃO'].isin(region))]  
     return df_filtro
 
