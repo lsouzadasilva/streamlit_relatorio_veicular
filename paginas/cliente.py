@@ -4,9 +4,9 @@ import requests
 import pandas as pd
 
 
-def clientes_area(df_filtro):
+def regiao(df_filtro):
     
-    st.header('Cliente', divider=True)
+    st.header('Regional', divider=True)
     
     def totl_veiculo_evolutio():
         veiculo = df_filtro.groupby('ANO-MES')['CONTADOR'].count().reset_index(name='COUNT')
