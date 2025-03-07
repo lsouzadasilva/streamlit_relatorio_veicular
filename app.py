@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from paginas.mercado_total import mercado
 from paginas.evolutivo import evolutivo
-from paginas.cliente import clientes_area
+from paginas.regional import regiao
 import pandas as pd
 
 
@@ -72,6 +72,6 @@ if paginas == 'Veículos':
 elif paginas == 'Evolutivo':
     evolutivo(df_filtro)
 elif paginas == 'Regional':
-    clientes_area(df_filtro)
+    regiao(df_filtro)
     
 
