@@ -46,8 +46,8 @@ filtro, paginas = st.sidebar.tabs(['Filtros', 'Páginas'])
 with paginas:
     paginas = option_menu(
         menu_title='Menu',
-        options=['Veículos', 'Evolutivo', 'Cliente'],
-        icons=['speedometer2', 'bar-chart-fill', 'person-circle'],
+        options=['Veículos', 'Evolutivo', 'Regional'],
+        icons=['speedometer2', 'bar-chart-fill', 'geo-alt-fill'],
         menu_icon='cast',
         default_index=0
     )
@@ -71,7 +71,7 @@ if paginas == 'Veículos':
     mercado(df_filtro)
 elif paginas == 'Evolutivo':
     evolutivo(df_filtro)
-elif paginas == 'Cliente':
+elif paginas == 'Regional':
     clientes_area(df_filtro)
     
 
