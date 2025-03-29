@@ -69,4 +69,3 @@ Bibliotecas listadas no requirements.txt
 
 # 👨‍💻 Autor
 Leandro Souza
-LinkedIn
